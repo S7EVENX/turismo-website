@@ -3,53 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <form id="survey-form"> 
+  
+  <div class="main-title">
+    <h2>Diagnostico socioeconómico del productor</h2>
+  </div>
+  <div class="logo">
+    <img src="assets/img/ESCUDO-ANGOCHAGUA-2019-VECTORIZADO_LOGOTIPO-ANGOCHAGUA3.png" alt="">
+  </div>
 
-        <label id="name-label">Nombre</label>
-        <input type="text" id="name" placeholder="Ingrese su nombre" required> </inpunt>
+    <form class="survey-form"> 
+      <div class="form-title">
+        <h2>1. Aspectos informativos</h2>
+      </div>
+      <div class="form-group">
+        <label class="nombre-label">Nombre</label>
+        <input type="text" name="nombre" class="form-input" placeholder="Ingrese su nombre" required> </inpunt>
+      </div>
         
+        <div class="form-group">
+          <label class="fecha-label">Fecha</label>
+          <input type="date" name="fecha" class="form-input" required> </inpunt>
+          
+        </div>
+       
+        <div class="form-group">
+          <label class="legalizado-label">Legalizado</label>
+          <div class="radio-group">
+            <label><input type="radio" value="si"  class="form-input" name="legalizado">SI</input></label>
+            <label><input type="radio" value="no"  class="form-input" name="legalizado">NO</input></label>     
+          </div>
+  
+        </div>
+       
+        <div class="form-group">
+          <label class="tipoEmprendimiento-label">Tipo de emprendimiento</label>
+          <div class="radio-group">
+    <label>  <input type="radio" value="preAsocicacion" name="tipoEmprendimiento">Pre Asociación</input><input type="radio" value="asociacion" name="tipoEmprendimiento">Asociación</input></label>
+    <label><input type="radio" value="uep" name="tipoEmprendimiento">UEP</input></label>
+    <label><input type="radio" value="artesano" name="tipoEmprendimiento">Artesano</input></label>
+    <label>  <input type="radio" value="emprendimiento" name="tipoEmprendimiento">Emprendimiento Familiar</input></label>
+          </div>
+        </div>
+      
+       
+       <div class="form-group">
+        <label class="barrio-label">Parroquia/Barrio</label>
+       <input type="text" name="barrio" class="form-input" placeholder="Ingrese su Parroquia/Barrio" required> </inpunt>
+       </div>
+       
+       
+       <div class="form-group">
+        <label class="canton-label">Cantón</label>
+       <input type="text" name="canton" class="form-input" placeholder="Ingrese su canton" required> </inpunt>
+       </div>
+       
+       
+       <div class="form-group">
+        <label class="contacto">Persona de contacto</label>
+       <input type="text" name="contacto" class="form-input" placeholder="Ingrese su contacto" required> </inpunt>
+       </div>
+       
+       
+       <div class="form-group">
+        <label class="cargo-label">Cargo(relación con la Asociación)</label>
+        <input type="text" name="cargo" class="form-input" placeholder="Ingrese su Asociación" required> </inpunt>
         
-        <label id="email-label">Email</label>
-        <input type="email" id="email" placeholder="Ingrese su email" required> </inpunt>
+       </div>
+       
+       <div class="form-group">
+        <label class="telefono-label">Telefono</label>
+        <input type="number" name="telefono" class="form-input" placeholder="Ingrese su email" required> </inpunt>
+       </div>
+    
+       
+       <div class="form-group">
+        <label>Dia mas adecuado para reunirse con la asociación</label>
+        <select id="ida" name="dia" class="form-input"> 
+          <option> Lunes</option>
+          <option> Martes</option>
+          <option> Miercoles</option>
+          <option> Jueves</option>
+          <option> Viernes</option>
+          <option> Sabado</option>
+          <option> Domingo</option>
+         </select>
+       </div>
+      
         
+        <div class="form-group">
+          <label class="distancia-label">Distancia en duración minutos aproximado</label>
+          <input type="text" name="distancia"  class="form-input" placeholder="Ingrese la distancia" required> </inpunt>
+        </div>
+       
+
+        <div class="form-group">
+
+          <label class="socios-label">Número de socios(aprox.)</label>
+          <input type="number" name="socios" class="form-input" placeholder="Ingrese numero de socios" required> </inpunt>
+          
+        </div>
+        <div class="form-group">
+
+          <label class="familias-label">Número de familias(aprox.)</label>
+          <input type="number" name="familias" class="form-input" placeholder="Ingrese numero de familias " required> </inpunt>
+          
+        </div>
+
+        <div class="form-group">
+          <label class="genero-label">Genero</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="genero" value="hombre" required>Hombre </inpunt>
+          </label>
+        <label> <input type="radio" name="genero" value="mujer" required>Mujer </inpunt></label>
+        </div>
+         
+        </div>
+        <div class="form-group">
+          <label class="hijos-label">Número de hijos</label>
+          <input type="number" name="hijos" class="form-input" placeholder="Ingrese numero de hijos" required> </inpunt>
+
+        </div>
         
-        <label id="number-label">Numero</label>
-        <input type="number" id="number" min="6" max="10" placeholder="Ingrese su numero" required> </inpunt>
+        <div class="form-group">
+          <label class="discapacidad-label">Personas con discapacidad</label>
+          <input type="number" name="discapacidad" class="form-input" placeholder="Ingrese numero de Personascon discapacclassad" required> </inpunt>
+        </div>
         
-        <label>Escoge</label>
-        <select id="dropdown"> 
-          <option> 1</option>
-          <option> 2</option>
-        </select>
-        
-        
-        <label>Selecciona</label>
-        
-        <input type="radio" name="letra" value="A"> A</input>
-        <input type="radio" name="letra" value="B"> B</input>
-        
-        <label>Marca</label>
-        
-        <input type="checkbox" value="A"> A</input>
-        <input type="checkbox" value="B"> B</input>
-        <input type="checkbox" value="C"> C</input>
-        
-        
-        <label>Escribe</label>
-        
-        <textarea> </textarea>
-        
-        
-        <button id="submit"> Enviar</button>
-        
-        
-        
-        
-        
-        <form/>
-</body>
-</html>
+        <div class="form-group">
+          <button type="submit" value="enviar" class="submit-btn">Siguiente</button>
+        </div>
+        <form>
+   
+
+      </body>
+      </html>
